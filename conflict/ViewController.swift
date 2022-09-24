@@ -11,8 +11,7 @@ class ViewController: UIViewController {
     
     var customView: UIView = {
         var customView = UIView()
-        customView.backgroundColor = .black
-        customView.isHidden = false
+        customView.backgroundColor = .purple
         return customView
     }()
 
