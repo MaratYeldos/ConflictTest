@@ -11,7 +11,8 @@ class ViewController: UIViewController {
     
     var customView: UIView = {
         var customView = UIView()
-        customView.backgroundColor = .red
+        customView.backgroundColor = .black
+        customView.isHidden = false
         return customView
     }()
 
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
             customView.topAnchor.constraint(equalTo: view.topAnchor, constant: 60),
             customView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             customView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            customView.heightAnchor.constraint(equalToConstant: 100)
+            customView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100)
         ])
     }
 
