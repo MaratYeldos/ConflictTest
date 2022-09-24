@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     var customView: UIView = {
         var customView = UIView()
-        customView.backgroundColor = .blue
+        customView.backgroundColor = .green
         return customView
     }()
 
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
         view.addSubview(customView)
         NSLayoutConstraint.activate([
-            customView.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
+            customView.topAnchor.constraint(equalTo: view.topAnchor, constant: 60),
             customView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             customView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             customView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50)
