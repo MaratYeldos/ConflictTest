@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     var customView: UIView = {
         var customView = UIView()
         customView.backgroundColor = .purple
+        customView.backgroundColor = .brown
         return customView
     }()
     
