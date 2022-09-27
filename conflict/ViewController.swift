@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     var customView: UIView = {
         var customView = UIView()
-        customView.backgroundColor = .red
+        customView.backgroundColor = .systemBlue
         return customView
     }()
     
